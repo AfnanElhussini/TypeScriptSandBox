@@ -40,3 +40,21 @@ let arrayTwo : string[] = ["Afnan", "Asmaa", "Yasmeen", "Asma"];
 let arrayThree : (string | number) [] = [1, 2, 3, 4 , 5,"Afnan", "Asmaa", "Yasmeen", "Asma" ];
 
 let arrayFour : (string | number | string[])[]   = [1, 2, 3, 4, "A", "B", ["C", "D"]];
+
+/* Functions */ 
+// No Implicit Return  >> To Check All code Paths In a function to Ensure They Return a value .
+let showMsg = true;
+function showDetails(name: string, age: number, _salary: number) : string{
+    let test = 10;
+    if(showMsg){
+      return `Hello ${name},Age is : ${age}, Salary is: ${_salary} test = ${test}`;
+    }
+    return `No Data to Show`;
+}
+
+console.log(showDetails("afnan", 24, 3000));
+
+
+function showData(name, age, country){
+    return `${name} `
+}
